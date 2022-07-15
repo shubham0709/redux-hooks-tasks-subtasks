@@ -1,0 +1,41 @@
+{
+    "data": {
+        "error": false,
+        "message": "Registration Success"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "content-length": "51",
+        "content-type": "text/html; charset=UTF-8"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {
+            "FormData": null
+        },
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+        },
+        "method": "post",
+        "url": "https://masai-api-mocker.herokuapp.com/auth/register",
+        "data": "{\"name\":\"Shubham Barore\",\"email\":\"shubham07barore@gmail.com\",\"mobile\":\"9993050082\",\"username\":\"fw17_0709\",\"password\":\"pass1234\",\"description\":\"This is my description\"}"
+    },
+    "request": {}
+}
