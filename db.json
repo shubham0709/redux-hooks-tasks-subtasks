@@ -19,7 +19,7 @@
       "tags": ["personal"],
       "title": "json-server",
       "description": "task 2",
-      "category": "in-progess",
+      "category": "in-progress",
       "subtasks": [
         {
           "title": "1-t2s2",
@@ -52,7 +52,7 @@
       "tags": ["others"],
       "title": "json-server",
       "description": "task 4",
-      "category": "in-progess",
+      "category": "in-progress",
       "subtasks": [
         {
           "title": "t4s4",
@@ -80,7 +80,7 @@
       "tags": ["personal", "official", "others"],
       "title": "json-server",
       "description": "task 6",
-      "category": "in-progess",
+      "category": "in-progress",
       "subtasks": [
         {
           "title": "t1s1",
@@ -94,7 +94,7 @@
       "tags": ["official"],
       "title": "json-server",
       "description": "task 7",
-      "category": "in-progess",
+      "category": "in-progress",
       "subtasks": [
         {
           "title": "t7s7",

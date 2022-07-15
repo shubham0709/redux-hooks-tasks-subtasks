@@ -4,9 +4,13 @@ import {
     REGISTER_FAILURE,
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAILURE
+    LOGIN_FAILURE,
+    LOGOUT
 } from "./action.types";
 import axios from "axios";
+import { removeData } from "../../Utils/localStorage";
+
+
 export const registerAPI = (creds) => (dispatch) => {
     dispatch({ type: REGISTER_REQUEST })
     return axios.post("https://masai-api-mocker.herokuapp.com/auth/register", creds)
@@ -19,4 +23,9 @@ export const loginAPI = (creds) => (dispatch) => {
     return axios.post("https://masai-api-mocker.herokuapp.com/auth/login", creds)
         .then(res => dispatch({ type: LOGIN_SUCCESS, payload: res.data.token }))
         .catch(e => dispatch({ type: LOGIN_FAILURE }))
+}
+
+export const logoutAPI = () => (dispatch) => {
+    removeData("isAuth");
+    dispatch({ type: LOGOUT });
 }

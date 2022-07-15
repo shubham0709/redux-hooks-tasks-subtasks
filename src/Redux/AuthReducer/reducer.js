@@ -4,7 +4,8 @@ import {
     REGISTER_FAILURE,
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAILURE
+    LOGIN_FAILURE,
+    LOGOUT,
 } from "./action.types";
 
 import { getData, setData } from "../../Utils/localStorage";
@@ -40,6 +41,9 @@ const AuthReducer = (state = initialState, action) => {
             isAuth: false,
             isError: true,
             isLoading: false
+        }
+        case LOGOUT: {
+            return initialState
         }
         default: return state;
     }
