@@ -9,7 +9,7 @@ const TaskCategory = ({ color, task, category }) => {
     });
   }
   return (
-    <Box bg={color} w="25vw" h="100vh" p="5">
+    <Box bg={color} w="25vw" h="0 auto" p="5">
       <Box fontSize="40px">{category}</Box>
       {task?.length &&
         task.map((elem, i) => <SingleTask key={elem.id} elem={elem} />)}

@@ -2,7 +2,6 @@ import { Box, Checkbox, Input, TagLabel, VStack } from "@chakra-ui/react";
 import React from "react";
 
 const SubTask = ({ arr }) => {
-  console.log(arr);
   return (
     <Box>
       {arr?.length &&

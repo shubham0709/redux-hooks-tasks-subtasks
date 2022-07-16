@@ -27,7 +27,6 @@ export default function SimpleCard() {
         username: "masai-school",
       })
     ).then((res) => {
-      console.log(res);
       if (res.type === "LOGIN_SUCCESS") {
         navigate("/");
       }

@@ -43,7 +43,12 @@ const AuthReducer = (state = initialState, action) => {
             isLoading: false
         }
         case LOGOUT: {
-            return initialState
+            return {
+                isLoading: false,
+                isError: false,
+                token: (getData("isAuth") || ""),
+                isAuth: (getData("isAuth")?.length > 0 ? true : false)
+            }
         }
         default: return state;
     }

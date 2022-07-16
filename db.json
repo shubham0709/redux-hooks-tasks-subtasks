@@ -94,10 +94,25 @@
       "tags": ["official"],
       "title": "json-server",
       "description": "task 7",
-      "category": "in-progress",
+      "category": "done",
       "subtasks": [
         {
-          "title": "t7s7",
+          "title": "t7s7-11",
+          "description": "t7s7 description",
+          "status": false
+        },
+        {
+          "title": "t7s7-12",
+          "description": "t7s7 description",
+          "status": false
+        },
+        {
+          "title": "t7s7-13",
+          "description": "t7s7 description",
+          "status": false
+        },
+        {
+          "title": "t7s7-14",
           "description": "t7s7 description",
           "status": false
         }

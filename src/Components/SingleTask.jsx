@@ -12,7 +12,6 @@ import React from "react";
 import SubTask from "./SubTask";
 
 const SingleTask = ({ elem }) => {
-  console.log(elem);
   return (
     <Container w="80%" border="2px solid black" p="10px">
       <Text fontWeight="700">Task</Text>
