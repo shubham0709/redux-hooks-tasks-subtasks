@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Container,
   Flex,
@@ -14,26 +15,27 @@ import SubTask from "./SubTask";
 const SingleTask = ({ elem }) => {
   return (
     <Container w="80%" border="2px solid black" p="10px">
-      <Text fontWeight="700">Task</Text>
+      <Container>{elem.description}</Container>
       <Flex p="10px">
         <Box border="2px solid black" p="3px">
-          {elem.tags[0]}
+          <Flex direction="col">
+            {elem?.tags?.map((x, i) => (
+              <Badge
+                key={i}
+                ml="1"
+                fontSize="12px"
+                bg="green.500"
+                color="white"
+                p="5px"
+              >
+                {x}
+              </Badge>
+            ))}
+          </Flex>
         </Box>
         <Spacer />
       </Flex>
-      <Container>{elem.description}</Container>
       <SubTask arr={elem.subtasks} />
-      {/* {
-        <Box>
-          {elem.substasks?.length &&
-            elem.substasks.map((elem, i) => (
-              <Box key={i}>
-                <Input type="checkbox" />
-                <TagLabel>{elem}</TagLabel>
-              </Box>
-            ))}
-        </Box>
-      } */}
     </Container>
   );
 };
